@@ -5,3 +5,9 @@ AWS.config.update({
   accessKeyId: keys.accessKeyId,
   secretAccessKey: keys.secretAccessKey
 });
+
+
+
+// module.exports = {
+//   req_params,
+// }

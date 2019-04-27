@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const uuid = require('uuid');
 
-
+const AWS = require('aws-sdk');
 
 var docClient = new AWS.DynamoDB.DocumentClient();
 /* GET home page. */
@@ -26,7 +26,6 @@ router.get('/', function(req, res, next) {
       res.send('create item success.');
     }
   });
-  // res.send('nothing')
 });
 
 module.exports = router;
