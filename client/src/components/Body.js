@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import {fetchRequest} from '../actions';
 
-function addRow(i){
+function addRow(result){
     return [
         <tr>
-        <td>{i}</td>
+        <td>{result.data}</td>
         <td>Eclair</td>
         <td>$0.87</td>
         </tr>
@@ -13,7 +14,7 @@ function addRow(i){
 class Body extends Component{
     renderContent(){
         let result = [];
-
+        let apiCall = fetchRequest();
         for(let i = 0; i < 10; i++){
             result.push(addRow(i));
         }

@@ -1,12 +1,13 @@
+import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
-import Header from './components/Header.js';
-import Body from './components/Body.js';
+import './App.css';
+import Header from './components/Header';
+import Body from './components/Body';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      
       <Body/>
     </div>
   );
